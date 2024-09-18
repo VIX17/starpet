@@ -40,3 +40,10 @@ body {
     cursor: pointer;
     
 }
+
+#btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

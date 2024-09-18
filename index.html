@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/home.css">
     
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>StarPets</title>
 </head>
 <body>
@@ -38,6 +39,7 @@
 
               </ul>
               
+              <div id="btn-nav">
               <button class="btn-default">
                 <i class="fa-solid fa-basket-shopping" id="nav_shop"></i>   
               </button>
@@ -46,6 +48,7 @@
                 <i class="fa-solid fa-circle-user" id="nav_user"></i>
                 Entrar/Registrar
               </button>
+              </div>
 
               <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -53,7 +56,7 @@
         </nav>
 
         <div id="mobile_menu">
-            <ul class="mobile_nav_list">
+            <ul id="mobile_nav_list">
                 <li class="nav-item">
                     <a href="#inicio">Início</a>
                 </li>
@@ -75,20 +78,40 @@
                 </li>
             </ul>
 
-            <button class="btn-default">
-                <i class="fa-solid fa-circle-user" id="nav_user"></i>
-                Entrar/Registrar
-              </button>
+            <div id="btn-nav">
+                <button class="btn-default">
+                  <i class="fa-solid fa-basket-shopping" id="nav_shop"></i>   
+                </button>
+  
+                <button class="btn-default">
+                  <i class="fa-solid fa-circle-user" id="nav_user"></i>
+                  Entrar/Registrar
+                </button>
+                </div>
         </div>
     </header>
 
-    <main class="content">
-        <section class="home">
+    <main id="content">
+        <section id="home">
+            <div class="shape1"></div>
+            <div class="shape2"></div>
+            <div id="cta">
+                <hi class="title">
+                    Bem-vindo ao
+                    <span>StarPets</span>
+                </hi>
 
+                <p class="description">
+                    Aqui no nosso Pet Shop, cuidamos dos seus amigos de quatro patas como se fossem parte da nossa própria família. Oferecemos uma experiência única, onde o bem-estar dos pets é nossa prioridade máxima. Com uma equipe dedicada e apaixonada por animais, garantimos que cada visita seja repleta de carinho, atenção e produtos da mais alta qualidade. Desde a seleção cuidadosa de alimentos nutritivos até os serviços de estética que deixam seu pet ainda mais lindo, fazemos de tudo para que eles tenham uma vida saudável e feliz.
+                </p>
+
+
+            </div>
         </section>
     </main>
     
 
    <div id="fundo"></div>
+   <script src="src/javascript/script.js"></script>
 </body>
 </html>

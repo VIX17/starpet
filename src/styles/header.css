@@ -41,7 +41,7 @@ header {
 #nav_shop {
     color: #D88C32;
     font-size: 27px;
-    
+    margin: 9px;
     
 }
 
@@ -98,12 +98,14 @@ header {
         flex-direction: column;
         gap: 12px;
         margin: 12px 0px;
+        
     }
     
 
     #mobile_nav_list .nav-item{
         list-style: none;
         text-align: center;
+        
     }
 }
 
