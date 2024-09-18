@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Inknut Antiqua', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #E7AD6B;
+    position: relative;
+   
+}
+
+#fundo {
+    position: fixed; /* Faz a imagem ficar fixada no fundo */
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    object-fit: cover; /* Faz com que a imagem cubra toda a tela sem distorcer */
+    z-index: -1; /* Garante que a imagem fique atrás de todo o conteúdo */
+    background-repeat: repeat;
+    background-image: url('../images/fundo.jpg');
+    background-size: auto;
+    background-repeat: repeat;
+    width: 100vw; /* Largura total da viewport */
+    height: 100vh; /* Altura total da viewport */
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D88C32;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
