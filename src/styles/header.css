@@ -42,7 +42,23 @@ header {
     color: #D88C32;
     font-size: 27px;
     margin: 9px;
-    
+    position: relative;
+}
+
+/* Estilo para exibir o número de itens no carrinho */
+#nav_shop[data-count]:after {
+    content: attr(data-count); /* Exibe o valor do data-count */
+    position: absolute;
+    top: -13px; /* Ajuste conforme necessário */
+    right: -14px; /* Ajuste conforme necessário */
+    background-color: #71430D; /* Cor de fundo para o contador */
+    color: white; /* Cor do número */
+    font-size: 12px;
+    padding: 2px 6px; /* Espaçamento dentro do círculo */
+    border-radius: 50px; /* Deixa o fundo redondo */
+    min-width: 10px; /* Largura mínima para o círculo */
+    text-align: center;
+    font-weight: bold;
 }
 
 #nav_list {

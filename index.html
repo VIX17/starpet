@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+    <link rel="stylesheet" href="src/styles/testimonials.css">
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>StarPets</title>
@@ -41,7 +44,7 @@
               
               <div id="btn-nav">
               <button class="btn-default">
-                <i class="fa-solid fa-basket-shopping" id="nav_shop"></i>   
+                <i class="fa-solid fa-basket-shopping" id="nav_shop" data-count="0"></i>   
               </button>
 
               <button class="btn-default">
@@ -79,8 +82,8 @@
             </ul>
 
             <div id="btn-nav">
-                <button class="btn-default">
-                  <i class="fa-solid fa-basket-shopping" id="nav_shop"></i>   
+                <button class="nav_shop">
+                  <i class="fa-solid fa-basket-shopping"></i>   
                 </button>
   
                 <button class="btn-default">
@@ -94,7 +97,6 @@
     <main id="content">
         <section id="home">
             <div class="shape1"></div>
-            <div class="shape2"></div>
             <div id="cta">
                 <hi class="title">
                     Bem-vindo ao
@@ -107,11 +109,222 @@
 
 
             </div>
+            <div id="fundo"></div>
+            <img src="src/images/dog-fundo.png" alt="dog-fundo" id="dog-fundo">
         </section>
+
+    
+        <section id="menu">
+            <div id="titulo">
+                <i class="fa-solid fa-bone" id="osso"></i>
+                <h2 class="section-title">Produtos e serviços</h2>
+                <h3 class="section-subtitle">Nossos artigos especiais</h3>
+            </div>
+        
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+        
+                    <img src="src/images/banho.png" class="dish-image" alt="sorveteB">
+        
+                    <h3 class="dish-title">
+                        Tosa e Banho
+                    </h3>
+        
+                    <span class="dish-description">
+                        Oferecemos tosa e banho personalizados para seu pet, com produtos de qualidade e cuidados especiais para deixá-lo limpo, cheiroso e confortável.
+                    </span>
+        
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+        
+                    <div class="dish-price">
+                        <h4>R$50,00</h4>
+                        <button class="dish-shop" data-nome="Tosa e Banho" data-preco="50" data-imagem="src/images/banho.png">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+        
+                    <img src="src/images/vet.png" class="dish-image" alt="sorveteP">
+        
+                    <h3 class="dish-title">
+                        Consulta Vet
+                    </h3>
+        
+                    <span class="dish-description">
+                        Nossas consultas veterinárias oferecem atendimento especializado para garantir a saúde e bem-estar do seu pet, com diagnósticos precisos e orientações para cuidados preventivos.
+                    </span>
+        
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+        
+                    <div class="dish-price">
+                        <h4>R$90,00</h4>
+                        <button class="dish-shop" data-nome="Consulta Vet" data-preco="90" data-imagem="src/images/vet.png">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+        
+                    <img src="src/images/raçao.jpg" class="dish-image" alt="sorveteP">
+        
+                    <h3 class="dish-title">
+                        Premier Pet Golden
+                    </h3>
+        
+                    <span class="dish-description">
+                        Ração para Cães Filhotes, Sabor Carne e Arroz, 15kg
+                    </span>
+        
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+        
+                    <div class="dish-price">
+                        <h4>R$120,00</h4>
+                        <button class="dish-shop" data-nome="Premier Pet Golden" data-preco="120" data-imagem="src/images/raçao.jpg">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+        
+                    <img src="src/images/petisco.jpg" class="dish-image" alt="sorveteP">
+        
+                    <h3 class="dish-title">
+                        Cookie Premier 
+                    </h3>
+        
+                    <span class="dish-description">
+                        Petiscos para cães e filhotes 250g
+                    </span>
+        
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+        
+                    <div class="dish-price">
+                        <h4>R$25,00</h4>
+                        <button class="dish-shop" data-nome="Cookie Premier" data-preco="25" data-imagem="src/images/petisco.jpg">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div id="fundo2"></div>
+            <img src="src/images/test.png" id="testimonials_dog" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Nossos Profissionais
+                </h2>
+                <h3 class="section-subtitle">
+                    Dê uma olhadinha nos nossos Vets
+                </h3>
+
+                <div id="vets">
+                    <div class="vets">
+                        <img src="src/images/vet 1.png" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dr. Gustave
+                            </p>
+                            <p>
+                                Nosso veterinário especialista em gatos oferece atendimento dedicado e conhecimento profundo sobre as necessidades e peculiaridades dos felinos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="vets">
+                        <img src="src/images/vet 2.jpg" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dra. Ana
+                            </p>
+                            <p>
+                                Além de sua expertise clínica, a Dr.a Ana é conhecida por seu carinho e empatia, criando um ambiente acolhedor tanto para os pets quanto para seus donos.</p>
+                        </div>
+                    </div>
+
+                    <div class="vets">
+                        <img src="src/images/vet 3.png" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dra. Aline
+                            </p>
+                            <p>
+                                Especializada em clinicas, a Dra. Aline acredita que cada animal é único e merece uma atenção especial.</p>
+                        </div>
+                    </div>
+
+                    <div class="vets">
+                        <img src="src/images/vet 4.png" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dra. Diana
+                            </p>
+                            <p>
+                                A Dra. Diana é uma especialista apaixonada por oferecer o melhor em cuidados veterinários. Com uma formação robusta e 15 anos de experiência prática, ela é reconhecida por seu conhecimento abrangente e seu carinho pelos animais.</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+        </section>
+        
+       
     </main>
     
 
-   <div id="fundo"></div>
+    <script src="src/javascript/carrinho.js"></script>
    <script src="src/javascript/script.js"></script>
 </body>
 </html>

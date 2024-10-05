@@ -5,14 +5,15 @@
 }
 
 #cta {
-    width: 35%;
+    width: 39%;
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-top: 9%;
-    margin-left: 63%;
-    z-index: 2;
+    margin-top: 3%;
+    margin-left: 60%;
+    z-index: 1;
     align-items: center;
+    text-align: center;
 }
 
 #cta .title {
@@ -22,34 +23,24 @@
 }
 
 #cta .title span  {
-    color: #FF9D42;
+    color: #EE8305;
 }
 
 #cta .description {
     font-size: 20px;
     color: #F8ECDF;
+    margin-top: -2%;
 }
 
 .shape1 {
-    background-color: #835C2F;
+    background-color: #71430D;
     width: 50%;
-    height: 100%;
+    height: 90%;
     position: absolute;
-    border-radius: 800% 80% 90% 2%;
-    top: 0%;
-    left: 50%;
+    border-radius: 30% 10% 10% 30%;
+    top: -5%;
+    left: 55%;
     z-index: 1;
 
 }
 
-.shape2 {
-    background-color: #D88C32;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    border-radius: 10% 5% 90% 10%;
-    top: 0%;
-    right: 50%;
-    z-index: 1;
-
-}

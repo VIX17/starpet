@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Inknut Antiqua', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+    background-color: #E7AD6B;
+    
+  
+}
+
+#fundo {
+  position: fixed; /* Faz a imagem ficar fixada no fundo */
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  object-fit: cover; /* Faz com que a imagem cubra toda a tela sem distorcer */
+  z-index: -1; /* Garante que a imagem fique atrás de todo o conteúdo */
+  background-repeat: repeat;
+  background-image: url('../images/fundo.jpg');
+  background-size: auto;
+  width: 100vw; /* Largura total da viewport */
+  height: 100vh; /* Altura total da viewport */
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+
+#fundo-p {
+  position: relative;
+  opacity: 0.8;
+  left: 7%;
+  top: 95px;
+  width: 55%;
+  z-index: -1;
+  
+ 
+}
+
+#fundo-i {
+  position: relative;
+  opacity: 0.8;
+  left: 185px;
+  top: 95px;
+  height: 650px;
+  z-index: -1;
+}
+
+#titulo-p {
+  position: absolute;
+  top: 26%;
+  left: 30%;
+  color: #fff;
+  font-size: 28px;
+ 
+}
+
+#titulo-i {
+  position: absolute;
+  top: 26%;
+  right: 14%;
+  color: #fff;
+  font-size: 28px;
+ 
+}
+
+h3 {
+  position: absolute;
+  top: 34%;
+  left: 10%;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+#btn-p {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 650;
+  cursor: pointer;
+  position: absolute;
+  top: 34%;
+  left: 49%;
+}
+
+#btn-i {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 650;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  right: 14.5%;
+
+}
+
+/*
+footer {
+  background-color: #A06234;
+  color: white;
+  text-align: center;
+  padding: 20px;
+} */

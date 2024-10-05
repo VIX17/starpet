@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles_carrinho/header.css">
+    <link rel="stylesheet" href="src/styles_carrinho/styles.css">
+    <link rel="stylesheet" href="src/styles_carrinho/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>carrinho</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-star" id="nav_logo"><span class="logo-text">StarPets</span></i>
+            <i class="fa-solid fa-lock" id="cadeado"><span class="logo-text"> Ambiente seguro</span></i>
+              
+            <div id="btn-nav">
+                <button class="btn-default">
+                    <i class="fa-solid fa-circle-user" id="nav_user"></i>
+                    Entrar/Registrar
+                </button>
+            </div> 
+        </nav>
+    </header>
+
+    <div id="fundo"></div>
+
+    <main>
+        <section id="carrinho">
+            <img src="src/images/img_car/op-p.png" alt="" id="fundo-p">
+            <img src="src/images/img_car/op-i.png" alt="" id="fundo-i">
+            <h2 id="titulo-p">Meu carrinho</h2>
+            <h2 id="titulo-i">Resumo do pedido</h2>
+            <h3>Produtos</h3>
+            <button id="btn-p">Limpar carrinho</button>
+            <button id="btn-i">Comprar mais produtos</button>
+
+            <div class="cart-container">
+              <div class="produto" data-nome="Ração para Cães Filhotes, Sabor Carne e Arroz, 15kg" data-preco="120.00">
+                  <img src="src/images/raçao.jpg" alt="Premier Pet Golden">
+                  <p>Ração para Cães Filhotes, Sabor Carne e Arroz, 15kg</p>
+                  
+                  <div class="quantity-selector">
+                      <button class="qty-btn decrease">-</button>
+                      <input type="text" value="1" class="qty-input" readonly>
+                      <button class="qty-btn increase">+</button>
+                  </div>
+                  
+                  <p class="product-price">R$120,00</p>
+                  <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+              </div>
+          </div>
+
+            <div class="resumo-pedido">
+                <div class="cep">
+                    <label for="cepInput">Frete e prazo</label>
+                    <input type="text" id="cepInput">
+                    <button class="btn-buscar" onclick="buscarEndereco()">Buscar</button>
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <p>Produtos (3)</p>
+                <p>Total: R$358,81</p>
+            </div> 
+
+            <button class="btn-fazer-pedido">Fazer pedido</button>
+        </section>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+    <script src="src/javascript/cep.js"></script>
+    <script src="src/javascript/carrinho.js"></script>
+</body>
+</html>
